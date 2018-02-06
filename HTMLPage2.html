@@ -1,0 +1,74 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Forms Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="receipt.js"></script>
+    <script src="moment.js"></script>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-sm-2 col-md-1">
+                Name:
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <input type="text" id="name"  class="form-control">
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-sm-2">
+                Beverage
+            </div>
+            <div class="col-sm-2">
+                <select class="form-control" id="dropdown">
+                    <option value="0">Coffee</option>
+                    <option value="1">Tea</option>
+                    <option value="2">Beer</option>
+                    <option value="3">Wine</option>
+                </select>
+            </div>
+            <div class="col-sm-4">
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="size" value="0" id="radioS" checked="">
+                    <label for="radioS">Small</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="size" value="1" id="radioM">
+                    <label for="radioM">Medium</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="size" value="2" id="radioL">
+                    <label for="radioL">Large</label>
+                </div>
+
+            </div>
+            <div class="col-sm-2">
+                Quantity
+            </div>
+            <div class="col-sm-2">
+                <input type="number" id="quantity"  class="form-control">
+            </div>
+        </div>
+        <div class="row my-4" id="ageVerification" style="visibility:hidden">
+            <div class="col-md-2">
+                Birth Date: 
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="birthdate" class="form-control">
+            </div>
+        </div>
+        <div class="row my-4">
+            <button type="button" id="submit" class="btn btn-info">Submit Order</button>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-6 receipt" id="receipt" align="center">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
